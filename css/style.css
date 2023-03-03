@@ -1,0 +1,327 @@
+@import url('reset-style.css');
+
+.wrapper {
+    min-height: 100%;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+._container {
+    max-width: 1150px;
+    margin: 0 auto;
+    padding: 0 15px;
+    text-align: center;
+}
+
+/* ------------------ ОБЩИЕ СТИЛИ -------------------- */
+.navigation {
+    margin-bottom: 60px;
+}
+.navigation__list {
+    margin: 0 auto;
+    height: 30px;
+    width: 603px;
+    display: flex;
+    justify-content: space-between;
+}
+.navigation__list-item {
+    line-height: 21.78px;
+}
+.navigation__list-item a:hover {
+    color: #ff25c2;
+}
+.description {
+    line-height: 30.26px;
+    font-size: 25px;
+    letter-spacing: -0.03em;
+}
+.title {
+    font-size: 100px;
+    line-height: 73px;
+    letter-spacing: -0.06em;
+    color: #ff25c2
+}
+.buy-button {
+    color: white;
+    font-weight: 400px;
+    font-size: 25px;
+    line-height: 30px;
+    background-color: transparent;
+    border: 1px solid #fff;
+    letter-spacing: -0.03em;
+    border-radius: 100px;
+    text-transform: uppercase;
+    height: 110px;
+}
+
+/* ------------------ HEADER -------------------- */
+.header {
+    margin-top: 44px;
+}
+.header__container {
+}
+.header__nav {
+}
+
+/* ------------------ PAGE -------------------- */
+.page {
+
+}
+.page > *:not(:last-child, :first-child) {
+    margin-bottom: 150px;
+}
+
+/* ----------------- MAIN-BLOCK ------------------ */
+.page__main-block {
+}
+.main-block {
+}
+.main-block__container {
+}
+.main-block__title {
+    height: 156px;
+    font-size: 150px;
+    font-weight: 700;
+    line-height: 133px;
+    letter-spacing: -0.07em;
+    vertical-align: top;
+    color: #ff25c2
+}
+.main-block__desc {
+    position: relative;
+    margin: 20px auto 0 auto;
+    width: 430px;
+    
+}
+.main-block__img {
+    margin: -33px 0 70px 0;
+}
+
+/* ----------------- MODELS ------------------ */
+.page__models {
+}
+.models {
+}
+.models__container {
+    text-align: left;
+}
+.models__list {
+}
+.list {
+}
+.list__item {
+    width: 100%;
+    height: 644px;
+    border-radius: 30px;
+    padding: 50px 0 0 50px;
+}
+.list__item__title {
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 56px;
+    margin-bottom: 149px;
+    letter-spacing: -0.05em;
+}
+.list__item__mini-img {
+    display: block;
+    margin-bottom: 30px;
+    border-radius: 30px;
+}
+.list__item__button {
+    width: 420px;
+}
+
+.list__item_white {
+    background: url('../img/models/ear-white.jpg') no-repeat;
+    margin-bottom: 70px;}
+.list__item_black {
+    border: 1px solid white;
+    background: url('../img/models/ear-black.jpg') no-repeat;
+}
+
+/* ----------------- SETTINGS ------------------ */
+.page__settings-ears {
+}
+.settings {
+    position: relative;
+    max-height: 786px;
+}
+.back {
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 786px;
+    z-index: -1;
+}
+.settings__left-img {
+    width: 100%;
+    object-fit: cover;
+}
+.settings__right-img {
+    width: 100%;
+    object-fit: cover;
+
+}
+.settings__container {
+    padding-top: 190px;
+    padding-bottom: 190px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 39px;
+    width: 671px;
+    z-index: 2;
+}
+.settings__title {
+}
+.settings__desc {
+}
+
+/* ----------------- TRAINING ------------------ */
+.page__training {
+}
+.training {
+}
+.training_container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 80px;
+}
+.training__title {
+    height: 222px;
+    width: 676px;
+    margin: 0 auto;
+}
+.training__function {
+}
+.function {
+    margin: 0 auto;
+    height: 194px;
+    width: 507px;
+}
+.function__icon {
+    background-color: #ff25c2;
+    border-radius: 100px;
+    margin-bottom: 20px;
+}
+.function__icon_hash {
+    padding: 19px;
+}
+.function__icon_pause {
+    padding: 17px;
+}
+.function__icon_power {
+    padding: 16px 21px;
+}
+.function__desc {
+}
+
+/* ----------------- TRAINING ------------------ */
+.page__microphone {
+    height: 1040px;
+}
+.microphone {
+    position: relative;
+}
+.microphone__img-back {
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+    object-fit: cover;
+    height: 100%;
+}
+.microphone__container {
+    padding-top: 130px;
+}
+.microphone__title {
+    color: white;
+    margin-bottom: 40px;
+}
+.microphone__desc {
+    margin: 0 auto;
+    width: 942px;
+    font-size: 45px;
+    line-height: 40.5px;
+    margin-bottom: 60px;
+}
+.microphone__button {
+    width: 866px;
+    margin: 0 auto;
+    margin-bottom: 130px;
+}
+/* ----------------- SOUND ------------------ */
+.page__sound {
+}
+.sound {
+}
+.sound__container {
+}
+._container {
+}
+.sound__title {
+    color: white;
+    margin-bottom: 100px;
+}
+.sound__desc {
+    position: relative;
+    height: 450px;
+    padding-top: 340px;
+    margin-bottom: 60px;
+}
+.sound__desc__img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    width: 100%;
+    border-radius: 30px;
+
+}
+.sound__desc__text {
+    width: 475px;
+    margin: 0 auto;
+    font-size: 25px;
+    line-height: 30px;
+    letter-spacing: -0.03em;
+}
+.social {
+}
+.social__list {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 196px;
+    margin-bottom: 198px;
+}
+.social__list__item {
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 44.11px;
+    letter-spacing: -0.06em;
+}
+
+/* ----------------- SOUND ------------------ */
+.footer {
+}
+.footer__container {
+}
+._container {
+}
+.footer__nav {
+}
+.navigation {
+}
+.navigation__list {
+}
+.navigation__list-item {
+}
+.footer__end {
+    color: #ff25c2;
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 42.36px;
+    text-align: center;
+    margin-bottom: 42px;
+}
