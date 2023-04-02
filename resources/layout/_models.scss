@@ -1,0 +1,34 @@
+.models {
+    &__container {
+        text-align: left;
+    }
+    .list__item {
+        width: 100%;
+        height: 644px;
+        border-radius: 30px;
+        padding: 50px 0 0 50px;
+        &__title {
+            font-weight: 700;
+            font-size: 60px;
+            line-height: 56px;
+            margin-bottom: 149px;
+            letter-spacing: -0.05em;
+        }
+        &__mini-img {
+            display: block;
+            margin-bottom: 30px;
+            border-radius: 30px;
+        }
+        &__button {
+            width: 420px;
+        }
+        &_white {
+            background: url('../img/models/ear-white.jpg') no-repeat;
+            margin-bottom: 70px;
+        }
+        &_black {
+            border: 1px solid white;
+            background: url('../img/models/ear-black.jpg') no-repeat;
+        }
+    }
+}

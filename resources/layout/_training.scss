@@ -1,0 +1,33 @@
+.training {
+    &__container {
+        display: flex;
+        flex-direction: column;
+        row-gap: 80px;
+    }
+    &__title {
+        max-height: 222px;
+        max-width: 676px;
+        margin: 0 auto;
+    }
+    .function {
+        margin: 0 auto;
+        max-height: 194px;
+        max-width: 507px;
+        &__icon {
+            background-color: #ff25c2;
+            border-radius: 100px;
+            margin-bottom: 20px;
+            &_hash {
+                padding: 19px;
+            }
+            &_pause {
+                padding: 17px;
+            }
+            &_power {
+                padding: 16px 21px;
+            }
+        }
+        
+    }
+    
+}
