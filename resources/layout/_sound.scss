@@ -1,0 +1,23 @@
+.sound {
+    &__title {
+        color: white;
+        margin-bottom: 100px;
+    }
+    &__desc {
+        position: relative;
+        margin-bottom: 120px;
+        width: 100%;
+        margin-top: -100px;
+        &__text {
+            max-width: 475px;
+            margin: 0 auto;
+            font-size: 25px;
+            line-height: 30px;
+            letter-spacing: -0.03em;
+        }
+    }
+    &__img {
+        width: 100%;
+        border-radius: 30px;
+    }
+}

@@ -1,0 +1,29 @@
+.microphone {
+    position: relative;
+    &__container {
+        padding-top: 130px;
+    }
+    &__img-back {
+        position: absolute;
+        width: 100%;
+        z-index: -1;
+        object-fit: cover;
+        height: 100%;
+    }
+    &__title {
+        color: #fff;
+        margin-bottom: 40px;
+    }
+    &__desc {
+        margin: 0 auto;
+        width: 942px;
+        font-size: 45px;
+        line-height: 40.5px;
+        margin-bottom: 60px;
+    }
+    &__button {
+        width: 866px;
+        margin: 0 auto;
+        margin-bottom: 130px;
+    }
+}

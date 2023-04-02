@@ -1,621 +1,629 @@
-@import url('reset-style.css');
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+a, a:visited, a:hover {
+  text-decoration: none;
+  color: #fff;
+}
+
+ul, ol, li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+html, body {
+  height: 100%;
+  line-height: 1;
+  letter-spacing: 1;
+  font-size: 18px;
+  color: #fff;
+  font-weight: 400;
+  font-family: Inter;
+  background-color: #000000;
+}
+
+html {
+  scroll-behavior: smooth;
+}
 
 .wrapper {
-    min-height: 100%;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
+  min-height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
 }
+
 ._container {
-    max-width: 1150px;
-    margin: 0 auto;
-    padding: 0 15px;
-    text-align: center;
-    box-sizing: content-box;
+  max-width: 1150px;
+  margin: 0 auto;
+  padding: 0 15px;
+  text-align: center;
+  box-sizing: content-box;
 }
+
 .page {
-    flex: 1 1 auto;
+  flex: 1 1 auto;
 }
-/* ------------------ ОБЩИЕ СТИЛИ -------------------- */
+.page > *:not(:last-child, :first-child) {
+  margin-bottom: 150px;
+}
+
 .navigation {
-    margin-bottom: 60px;
+  margin-bottom: 60px;
 }
 .navigation__list {
-    margin: 0 auto;
-    height: 30px;
-    max-width: 603px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+  margin: 0 auto;
+  height: 30px;
+  max-width: 603px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 .navigation__list-item {
-    line-height: 21.78px;
-    flex-grow: 1;
+  line-height: 21.78px;
+  flex-grow: 1;
 }
 .navigation__list-item a {
-    transition: color .6s;
+  transition: color 0.6s;
 }
 .navigation__list-item a:hover {
-    color: #ff25c2;
+  color: #ff25c2;
 }
+
 .description {
-    line-height: 30.26px;
-    font-size: 25px;
-    letter-spacing: -0.03em;
+  line-height: 30.26px;
+  font-size: 25px;
+  letter-spacing: -0.03em;
 }
+
 .title {
-    font-size: 100px;
-    line-height: 73px;
-    letter-spacing: -0.06em;
-    color: #ff25c2
+  font-size: 100px;
+  line-height: 73px;
+  letter-spacing: -0.06em;
+  color: #ff25c2;
 }
+
 .buy-button {
-    color: white;
-    font-weight: 400px;
-    font-size: 25px;
-    line-height: 30px;
-    background-color: transparent;
-    border: 1px solid #fff;
-    letter-spacing: -0.03em;
-    border-radius: 100px;
-    text-transform: uppercase;
-    height: 110px;
-    cursor: pointer;
-    transition: all .5s;
+  color: white;
+  font-weight: 400px;
+  font-size: 25px;
+  line-height: 30px;
+  background-color: transparent;
+  border: 1px solid #fff;
+  letter-spacing: -0.03em;
+  border-radius: 100px;
+  text-transform: uppercase;
+  height: 110px;
+  cursor: pointer;
+  transition: all 0.5s;
 }
 .buy-button:hover {
-    background-color: #a7a7a771;
-    border-color: gray;
+  background-color: rgba(167, 167, 167, 0.4431372549);
+  border-color: gray;
 }
 
-/* ------------------ HEADER -------------------- */
 .header {
-    margin-top: 44px;
+  margin-top: 44px;
 }
 
-/* ------------------ PAGE -------------------- */
-.page > *:not(:last-child, :first-child) {
-    margin-bottom: 150px;
-}
-
-/* ----------------- MAIN-BLOCK ------------------ */
 .main-block__title {
-    font-size: 150px;
-    font-weight: 700;
-    line-height: 133px;
-    letter-spacing: -0.07em;
-    vertical-align: top;
-    color: #ff25c2;
-    margin-bottom: 53px;
+  font-size: 150px;
+  font-weight: 700;
+  line-height: 133px;
+  letter-spacing: -0.07em;
+  vertical-align: top;
+  color: #ff25c2;
+  margin-bottom: 53px;
 }
 .main-block__desc {
-    position: relative;
-    margin: 20px auto 0 auto;
-    width: 430px;
-    
+  position: relative;
+  margin: 20px auto 0 auto;
+  width: 430px;
 }
 .main-block__img {
-    margin: -33px 0 70px 0;
+  margin: -33px 0 70px 0;
 }
 
-/* ----------------- MODELS ------------------ */
 .models__container {
-    text-align: left;
+  text-align: left;
 }
-.list__item {
-    width: 100%;
-    height: 644px;
-    border-radius: 30px;
-    padding: 50px 0 0 50px;
+.models .list__item {
+  width: 100%;
+  height: 644px;
+  border-radius: 30px;
+  padding: 50px 0 0 50px;
 }
-.list__item__title {
-    font-weight: 700;
-    font-size: 60px;
-    line-height: 56px;
-    margin-bottom: 149px;
-    letter-spacing: -0.05em;
+.models .list__item__title {
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 56px;
+  margin-bottom: 149px;
+  letter-spacing: -0.05em;
 }
-.list__item__mini-img {
-    display: block;
-    margin-bottom: 30px;
-    border-radius: 30px;
+.models .list__item__mini-img {
+  display: block;
+  margin-bottom: 30px;
+  border-radius: 30px;
 }
-.list__item__button {
-    width: 420px;}
-.list__item_white {
-    background: url('../img/models/ear-white.jpg') no-repeat;
-    margin-bottom: 70px;}
-.list__item_black {
-    border: 1px solid white;
-    background: url('../img/models/ear-black.jpg') no-repeat;
+.models .list__item__button {
+  width: 420px;
+}
+.models .list__item_white {
+  background: url("../img/models/ear-white.jpg") no-repeat;
+  margin-bottom: 70px;
+}
+.models .list__item_black {
+  border: 1px solid white;
+  background: url("../img/models/ear-black.jpg") no-repeat;
 }
 
-/* ----------------- FUNCTIONS ------------------ */
 .settings {
-    position: relative;
+  position: relative;
 }
-.back {
-    position: absolute;
-    left: 0;
-    top: 0;
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    height: 786px;
-    z-index: -1;
+.settings .back {
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 786px;
+  z-index: -1;
 }
-.settings__left-img {
-    width: 100%;
-    object-fit: cover;
-}
-.settings__right-img {
-    width: 100%;
-    object-fit: cover;
-
+.settings__img {
+  width: 100%;
+  object-fit: cover;
 }
 .settings__container {
-    padding-top: 190px;
-    padding-bottom: 190px;
-    display: flex;
-    flex-direction: column;
-    row-gap: 39px;
-    max-width: 671px;
-    z-index: 2;
+  padding-top: 190px;
+  padding-bottom: 190px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 39px;
+  max-width: 671px;
+  z-index: 2;
 }
 
-/* ----------------- TRAINING ------------------ */
-.training_container {
-    display: flex;
-    flex-direction: column;
-    row-gap: 80px;
+.training__container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 80px;
 }
 .training__title {
-    max-height: 222px;
-    max-width: 676px;
-    margin: 0 auto;
+  max-height: 222px;
+  max-width: 676px;
+  margin: 0 auto;
 }
-.function {
-    margin: 0 auto;
-    max-height: 194px;
-    max-width: 507px;
+.training .function {
+  margin: 0 auto;
+  max-height: 194px;
+  max-width: 507px;
 }
-.function__icon {
-    background-color: #ff25c2;
-    border-radius: 100px;
-    margin-bottom: 20px;
+.training .function__icon {
+  background-color: #ff25c2;
+  border-radius: 100px;
+  margin-bottom: 20px;
 }
-.function__icon_hash {
-    padding: 19px;
+.training .function__icon_hash {
+  padding: 19px;
 }
-.function__icon_pause {
-    padding: 17px;
+.training .function__icon_pause {
+  padding: 17px;
 }
-.function__icon_power {
-    padding: 16px 21px;
+.training .function__icon_power {
+  padding: 16px 21px;
 }
 
-/* ----------------- TRAINING ------------------ */
 .microphone {
-    position: relative;
-}
-.microphone__img-back {
-    position: absolute;
-    width: 100%;
-    z-index: -1;
-    object-fit: cover;
-    height: 100%;
+  position: relative;
 }
 .microphone__container {
-    padding-top: 130px;
+  padding-top: 130px;
+}
+.microphone__img-back {
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+  object-fit: cover;
+  height: 100%;
 }
 .microphone__title {
-    color: white;
-    margin-bottom: 40px;
+  color: #fff;
+  margin-bottom: 40px;
 }
 .microphone__desc {
-    margin: 0 auto;
-    width: 942px;
-    font-size: 45px;
-    line-height: 40.5px;
-    margin-bottom: 60px;
+  margin: 0 auto;
+  width: 942px;
+  font-size: 45px;
+  line-height: 40.5px;
+  margin-bottom: 60px;
 }
 .microphone__button {
-    width: 866px;
-    margin: 0 auto;
-    margin-bottom: 130px;
-}
-/* ----------------- SOUND ------------------ */
-.sound__title {
-    color: white;
-    margin-bottom: 100px;
-}
-.sound__desc {
-    position: relative;
-    margin-bottom: 120px;
-    width: 100%;
-    margin-top: -100px;
-}
-.sound__img {
-    width: 100%;
-    border-radius: 30px;
-}
-.sound__desc__text {
-    max-width: 475px;
-    margin: 0 auto;
-    font-size: 25px;
-    line-height: 30px;
-    letter-spacing: -0.03em;
-}
-.social__list {
-    display: flex;
-    justify-content: space-between;
-    padding: 0 196px;
-    margin-bottom: 198px;
-}
-.social__list__item {
-    font-size: 60px;
-    font-weight: 700;
-    line-height: 44.11px;
-    letter-spacing: -0.06em;
-}
-.social__list__item a {
-    transition: color .5s;
-}
-.social__list__item a:hover {
-    color: rgb(157, 157, 157)
+  width: 866px;
+  margin: 0 auto;
+  margin-bottom: 130px;
 }
 
-/* ----------------- SOCIAL ------------------ */
-.footer__end {
-    text-align: center;
-    margin-bottom: 42px;
+.sound__title {
+  color: white;
+  margin-bottom: 100px;
 }
-.footer__end a{
-    color: #ff25c2;
-    font-size: 35px;
-    font-weight: 700;
-    line-height: 42.36px;
+.sound__desc {
+  position: relative;
+  margin-bottom: 120px;
+  width: 100%;
+  margin-top: -100px;
+}
+.sound__desc__text {
+  max-width: 475px;
+  margin: 0 auto;
+  font-size: 25px;
+  line-height: 30px;
+  letter-spacing: -0.03em;
+}
+.sound__img {
+  width: 100%;
+  border-radius: 30px;
+}
+
+.social__list {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 196px;
+  margin-bottom: 198px;
+}
+.social__list__item {
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 44.11px;
+  letter-spacing: -0.06em;
+}
+.social__list__item a {
+  transition: color 0.5s;
+}
+.social__list__item a:hover {
+  color: rgb(157, 157, 157);
+}
+
+.footer__end {
+  text-align: center;
+  margin-bottom: 42px;
+}
+.footer__end a {
+  color: #ff25c2;
+  font-size: 35px;
+  font-weight: 700;
+  line-height: 42.36px;
 }
 
 @media (max-width: 1100px) {
-    .microphone__title {
-        font-size: 60px;
-    }
-    .microphone__desc {
-        font-size: 30px;
-        width: 80%;
-    }
-    .microphone__container {
-        padding-top: 90px;
-    }
-    .microphone__button {
-        width: 90%;
-    }
+  .microphone__title {
+    font-size: 60px;
+  }
+  .microphone__desc {
+    font-size: 30px;
+    width: 80%;
+  }
+  .microphone__container {
+    padding-top: 90px;
+  }
+  .microphone__button {
+    width: 90%;
+  }
 }
-
 @media (max-width: 780px) {
-    .page > *:not(:last-child, :first-child) {
-        margin-bottom: 50px;
-    }
-    .navigation {
-        margin-bottom: 40px;
-    }
-    .navigation a {
-        font-size: 22px;
-    }
-    .navigation__list {
-        max-width: 90%;
-        gap: 20px;
-    }
-
-    .main-block__title {
-        margin-top: 20px;
-        font-size: 85px;
-        line-height: 80px;
-        margin-bottom: 0;
-    }
-    .main-block__desc {
-        font-size: 18px;
-        width: 70%;
-    }
-    .main-block__img {
-        max-width: 100%;
-    }
-
-    .title {
-        font-size: 60px;
-        line-height: 58px;
-    }
-    .back {
-        height: 430px;
-    }
-    .settings__container {
-        padding-top: 70px;
-        padding-bottom: 0px;
-        row-gap: 20px;
-    }
-
-    .training__title {
-        margin-top: 60px;
-        width: 100%;
-        font-size: 45px;
-    }
-    .training_container {
-        row-gap: 40px;
-    }
-    .description {
-        font-size: 18px;
-    }
-
-    .microphone__title {
-        font-size: 50px;
-        margin-bottom: 20px;
-    }
-    .microphone__desc {
-        font-size: 20px;
-        margin-bottom: 30px;
-    }
-    .microphone__container {
-        padding-top: 40px;
-    }
-    .microphone__button {
-        height: 80px;
-        width: 70%;
-        margin-bottom: 40px;
-    }
-    .buy-button {
-        width: 70%;
-    }
-
-    .sound__title {
-        margin-bottom: 40px;
-    }
-
-    .social__list {
-        padding: 0;
-        justify-content: space-around;
-        margin-bottom: 60px;
-    }
-    .social__list__item a {
-        font-size: 40px;
-    }
-
-    .footer__end {
-        margin-bottom: 21px;
-    }
+  .page > *:not(:last-child, :first-child) {
+    margin-bottom: 50px;
+  }
+  .navigation {
+    margin-bottom: 40px;
+  }
+  .navigation a {
+    font-size: 22px;
+  }
+  .navigation__list {
+    max-width: 90%;
+    gap: 20px;
+  }
+  .main-block__title {
+    margin-top: 20px;
+    font-size: 85px;
+    line-height: 80px;
+    margin-bottom: 0;
+  }
+  .main-block__desc {
+    font-size: 18px;
+    width: 70%;
+  }
+  .main-block__img {
+    max-width: 100%;
+  }
+  .title {
+    font-size: 60px;
+    line-height: 58px;
+  }
+  .back {
+    height: 430px;
+  }
+  .settings__container {
+    padding-top: 70px;
+    padding-bottom: 0px;
+    row-gap: 20px;
+  }
+  .training__title {
+    margin-top: 60px;
+    width: 100%;
+    font-size: 45px;
+  }
+  .training_container {
+    row-gap: 40px;
+  }
+  .description {
+    font-size: 18px;
+  }
+  .microphone__title {
+    font-size: 50px;
+    margin-bottom: 20px;
+  }
+  .microphone__desc {
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+  .microphone__container {
+    padding-top: 40px;
+  }
+  .microphone__button {
+    height: 80px;
+    width: 70%;
+    margin-bottom: 40px;
+  }
+  .buy-button {
+    width: 70%;
+  }
+  .sound__title {
+    margin-bottom: 40px;
+  }
+  .social__list {
+    padding: 0;
+    justify-content: space-around;
+    margin-bottom: 60px;
+  }
+  .social__list__item a {
+    font-size: 40px;
+  }
+  .footer__end {
+    margin-bottom: 21px;
+  }
 }
-
 @media (max-width: 583px) {
-    .page > *:not(:last-child, :first-child) {
-        margin-bottom: 30px;
-    }
-    .training__title {
-        margin-top: 0px;
-        width: 100%;
-        font-size: 45px;
-    }
-
-    .main-block__title {
-        margin-top: 10px;
-        font-size: 55px;
-    }
-    .main-block__desc {
-        margin-top: 10px;
-    }
-
-    .navigation a {
-        font-size: 20px;
-    }
-    .navigation__list {
-        gap: 15px;
-        width: 100%;
-    }
-
-    .list__item {
-        width: 100%;
-        height: 450px;
-        border-radius: 30px;
-        padding: 50px 0 0 50px;
-    }
-    .list__item__title {
-        font-weight: 700;
-        font-size: 40px;
-        line-height: 38px;
-        margin-bottom: 40px;
-        letter-spacing: -0.05em;
-    }
-    .list__item__mini-img {
-        display: block;
-        margin-bottom: 30px;
-        border-radius: 30px;
-    }
-    .list__item__button {
-        height: 60px;
-        width: 50%;
-    }
-
-    .title {
-        font-size: 35px;
-        line-height: 33px;
-        font-weight: 700;
-    }
-
-    .back {
-        height: 340px;
-    }
-    .settings__container {
-        padding-top: 70px;
-        row-gap: 10px;
-    }
-
-    .training__title {
-        margin-top: 70px;
-    }
-    .training_container {
-        row-gap: 30px;
-    }
-    .description {
-        font-size: 16px;
-    }
-
-    .microphone__title {
-        margin-bottom: 20px;
-        font-weight: 400;
-        font-size: 28px;
-    }
-    .microphone__desc {
-        font-size: 18px;
-        line-height: 21px;
-        margin-bottom: 30px;
-    }
-    .microphone__container {
-        padding-top: 40px;
-    }
-    .microphone__button {
-        height: 60px;
-        margin-bottom: 40px;
-    }
-    .buy-button {
-        width: 50%;
-        font-size: 18px;
-    }
-
-    .sound__title {
-        margin-bottom: 40px;
-
-    }
-    .sound__desc__text {
-        font-size: 16px;
-        line-height: 20px;
-        width: 70%;
-    }
-    .social__list {
-        padding: 0;
-        justify-content: space-around;
-        margin-bottom: 60px;
-    }
-    .social__list__item a {
-        font-size: 40px;
-    }
-
-    .footer__end {
-        margin-bottom: 21px;
-    }
+  .page > *:not(:last-child, :first-child) {
+    margin-bottom: 30px;
+  }
+  .training__title {
+    margin-top: 0px;
+    width: 100%;
+    font-size: 45px;
+  }
+  .main-block__title {
+    margin-top: 10px;
+    font-size: 55px;
+  }
+  .main-block__desc {
+    margin-top: 10px;
+  }
+  .navigation a {
+    font-size: 20px;
+  }
+  .navigation__list {
+    gap: 15px;
+    width: 100%;
+  }
+  .list__item {
+    width: 100%;
+    height: 450px;
+    border-radius: 30px;
+    padding: 50px 0 0 50px;
+  }
+  .list__item__title {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 38px;
+    margin-bottom: 40px;
+    letter-spacing: -0.05em;
+  }
+  .list__item__mini-img {
+    display: block;
+    margin-bottom: 30px;
+    border-radius: 30px;
+  }
+  .list__item__button {
+    height: 60px;
+    width: 50%;
+  }
+  .title {
+    font-size: 35px;
+    line-height: 33px;
+    font-weight: 700;
+  }
+  .back {
+    height: 340px;
+  }
+  .settings__container {
+    padding-top: 70px;
+    row-gap: 10px;
+  }
+  .training__title {
+    margin-top: 70px;
+  }
+  .training_container {
+    row-gap: 30px;
+  }
+  .description {
+    font-size: 16px;
+  }
+  .microphone__title {
+    margin-bottom: 20px;
+    font-weight: 400;
+    font-size: 28px;
+  }
+  .microphone__desc {
+    font-size: 18px;
+    line-height: 21px;
+    margin-bottom: 30px;
+  }
+  .microphone__container {
+    padding-top: 40px;
+  }
+  .microphone__button {
+    height: 60px;
+    margin-bottom: 40px;
+  }
+  .buy-button {
+    width: 50%;
+    font-size: 18px;
+  }
+  .sound__title {
+    margin-bottom: 40px;
+  }
+  .sound__desc__text {
+    font-size: 16px;
+    line-height: 20px;
+    width: 70%;
+  }
+  .social__list {
+    padding: 0;
+    justify-content: space-around;
+    margin-bottom: 60px;
+  }
+  .social__list__item a {
+    font-size: 40px;
+  }
+  .footer__end {
+    margin-bottom: 21px;
+  }
 }
-
 @media (max-width: 400px) {
-    .header {
-        margin-top: 22px;
-    }
-
-    .main-block__title {
-        margin-top: 20px;
-        font-size: 50px;
-    }
-    .main-block__desc {
-        margin-top: 10px;
-    }
-
-    .navigation a {
-        font-size: 18px;
-    }
-    .navigation__list {
-        gap: 15px;
-        width: 100%;
-    }
-
-    .list__item {
-        width: 100%;
-        height: 360px;
-        border-radius: 30px;
-        padding: 20px 0 0 20px;
-    }
-    .list__item__title {
-        font-weight: 700;
-        font-size: 30px;
-        line-height: 28px;
-        margin-bottom: 30px;
-        letter-spacing: -0.05em;
-    }
-    .list__item__mini-img {
-        display: block;
-        margin-bottom: 30px;
-        border-radius: 30px;
-    }
-    .list__item__button {
-        height: 60px;
-        width: 50%;
-    }
-
-    .title {
-        font-size: 30px;
-        line-height: 29px;
-        font-weight: 700;
-    }
-
-    .back {
-        height: 350px;
-    }
-    .settings__container {
-        padding-top: 70px;
-        row-gap: 15px;
-    }
-
-    .training__title {
-        margin-top: 70px;
-    }
-    .training_container {
-        row-gap: 30px;
-    }
-    .function__icon {
-        margin-bottom: 10px;
-    }
-    .description {
-        font-size: 15px;
-        line-height: 24px;
-    }
-
-    .microphone__title {
-        margin-bottom: 20px;
-        font-weight: 400;
-        font-size: 28px;
-    }
-    .microphone__desc {
-        font-size: 15px;
-        line-height: 24px;
-        margin-bottom: 30px;
-    }
-    .microphone__container {
-        padding-top: 40px;
-    }
-    .microphone__button {
-        height: 50px;
-        margin-bottom: 30px;
-    }
-    .buy-button {
-        width: 50%;
-        font-size: 18px;
-    }
-
-    .sound__title {
-        margin-bottom: 30px;
-
-    }
-    .sound__desc__text {
-        font-size: 16px;
-        line-height: 20px;
-        width: 70%;
-    }
-    .social__list {
-        padding: 0;
-        justify-content: space-around;
-        margin-bottom: 40px;
-    }
-    .social__list__item a {
-        font-size: 30px;
-    }
-
-    .footer__end {
-        margin-bottom: 21px;
-    }
-}
+  .header {
+    margin-top: 22px;
+  }
+  .main-block__title {
+    margin-top: 20px;
+    font-size: 50px;
+  }
+  .main-block__desc {
+    margin-top: 10px;
+  }
+  .navigation a {
+    font-size: 18px;
+  }
+  .navigation__list {
+    gap: 15px;
+    width: 100%;
+  }
+  .list__item {
+    width: 100%;
+    height: 360px;
+    border-radius: 30px;
+    padding: 20px 0 0 20px;
+  }
+  .list__item__title {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 28px;
+    margin-bottom: 30px;
+    letter-spacing: -0.05em;
+  }
+  .list__item__mini-img {
+    display: block;
+    margin-bottom: 30px;
+    border-radius: 30px;
+  }
+  .list__item__button {
+    height: 60px;
+    width: 50%;
+  }
+  .title {
+    font-size: 30px;
+    line-height: 29px;
+    font-weight: 700;
+  }
+  .back {
+    height: 350px;
+  }
+  .settings__container {
+    padding-top: 70px;
+    row-gap: 15px;
+  }
+  .training__title {
+    margin-top: 70px;
+  }
+  .training_container {
+    row-gap: 30px;
+  }
+  .function__icon {
+    margin-bottom: 10px;
+  }
+  .description {
+    font-size: 15px;
+    line-height: 24px;
+  }
+  .microphone__title {
+    margin-bottom: 20px;
+    font-weight: 400;
+    font-size: 28px;
+  }
+  .microphone__desc {
+    font-size: 15px;
+    line-height: 24px;
+    margin-bottom: 30px;
+  }
+  .microphone__container {
+    padding-top: 40px;
+  }
+  .microphone__button {
+    height: 50px;
+    margin-bottom: 30px;
+  }
+  .buy-button {
+    width: 50%;
+    font-size: 18px;
+  }
+  .sound__title {
+    margin-bottom: 30px;
+  }
+  .sound__desc__text {
+    font-size: 16px;
+    line-height: 20px;
+    width: 70%;
+  }
+  .social__list {
+    padding: 0;
+    justify-content: space-around;
+    margin-bottom: 40px;
+  }
+  .social__list__item a {
+    font-size: 30px;
+  }
+  .footer__end {
+    margin-bottom: 21px;
+  }
+}/*# sourceMappingURL=style.css.map */
