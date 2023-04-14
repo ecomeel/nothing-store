@@ -1,7 +1,11 @@
-.footer__end {
-    text-align: center;
-    margin-bottom: 42px;
-    & a {
+.footer {
+
+    &__end-wrapper {
+        margin-bottom: 42px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__end, &__end a {
         color: #ff25c2;
         font-size: 35px;
         font-weight: 700;
