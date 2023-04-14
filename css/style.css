@@ -175,6 +175,40 @@ html {
   border: 1px solid white;
   background: url("../img/models/ear-black.jpg") no-repeat;
 }
+.models .list__item_phone {
+  padding-left: 0;
+  display: flex;
+  column-gap: 25px;
+}
+.models .list__item_phone > * {
+  flex: 1 0 49%;
+}
+.models .list__item_phone .right-col {
+  border-radius: 30px;
+  position: relative;
+  background-image: url("../img/models/phone.png");
+  background-size: cover;
+  background-position: 50%;
+}
+.models .list__item_phone .list__item__title {
+  margin-bottom: 0;
+  position: absolute;
+  top: 50px;
+  left: 35px;
+  font-size: 45px;
+  line-height: 42.09px;
+}
+.models .list__item_phone .list__item__mini-img {
+  position: absolute;
+  left: 35px;
+  bottom: 45px;
+}
+.models .list__desc {
+  align-self: end;
+  font-size: 60px;
+  line-height: 56.11px;
+  font-weight: 700;
+}
 
 .settings {
   position: relative;
