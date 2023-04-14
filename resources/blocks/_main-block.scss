@@ -1,12 +1,13 @@
 .main-block {
     &__title {
+        margin-bottom: 42px;
         font-size: 150px;
         font-weight: 700;
         line-height: 133px;
         letter-spacing: -0.07em;
         vertical-align: top;
         color: #ff25c2;
-        margin-bottom: 53px;
+        margin-bottom: px;
     }
     &__desc {
         position: relative;
@@ -14,6 +15,6 @@
         width: 430px;
     }
     &__img {
-        margin: -33px 0 70px 0;
+        margin: -20px 0 70px 0;
     }
 }
