@@ -2,6 +2,19 @@
 $pink-color: #ff25c2;
 
 // Initial styles
+html, body {
+    height: 100%;
+    line-height: 1;
+    letter-spacing: 1;
+    font-size: 18px;
+    color: #fff;
+    font-weight: 400;
+    font-family: Inter;
+    background-color: #000000; 
+}
+html {
+    scroll-behavior: smooth;
+}
 .wrapper {
   min-height: 100%;
   overflow: hidden;
@@ -61,7 +74,7 @@ $pink-color: #ff25c2;
   font-weight: 700;
   line-height: 73px;
   letter-spacing: -0.06em;
-  color: #ff25c2;
+  color: $pink-color;
 }
 
 .buy-button {
