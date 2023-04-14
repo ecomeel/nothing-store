@@ -52,7 +52,7 @@ html {
   flex-direction: column;
 }
 
-._container {
+.container {
   max-width: 1150px;
   margin: 0 auto;
   padding: 0 15px;
@@ -175,6 +175,40 @@ html {
   border: 1px solid white;
   background: url("../img/models/ear-black.jpg") no-repeat;
 }
+.models .list__item_phone {
+  padding-left: 0;
+  display: flex;
+  column-gap: 25px;
+}
+.models .list__item_phone > * {
+  flex: 1 0 49%;
+}
+.models .list__item_phone .right-col {
+  border-radius: 30px;
+  position: relative;
+  background-image: url("../img/models/phone.png");
+  background-size: cover;
+  background-position: 50%;
+}
+.models .list__item_phone .list__item__title {
+  margin-bottom: 0;
+  position: absolute;
+  top: 50px;
+  left: 35px;
+  font-size: 45px;
+  line-height: 42.09px;
+}
+.models .list__item_phone .list__item__mini-img {
+  position: absolute;
+  left: 35px;
+  bottom: 45px;
+}
+.models .list__desc {
+  align-self: end;
+  font-size: 60px;
+  line-height: 56.11px;
+  font-weight: 700;
+}
 
 .settings {
   position: relative;
@@ -263,33 +297,59 @@ html {
   margin-bottom: 130px;
 }
 
-.sound__title {
+.gallery {
+  margin-bottom: 0;
+}
+.gallery__title {
   color: white;
   margin-bottom: 100px;
 }
-.sound__desc {
+.gallery__slides {
+  height: 582px;
   position: relative;
-  margin-bottom: 120px;
-  width: 100%;
-  margin-top: -100px;
 }
-.sound__desc__text {
-  max-width: 475px;
-  margin: 0 auto;
-  font-size: 25px;
-  line-height: 30px;
-  letter-spacing: -0.03em;
+.gallery__slide {
+  position: absolute;
+  opacity: 0;
+  visibility: hidden;
 }
-.sound__img {
+.gallery__slide_active {
+  opacity: 1;
+  visibility: visible;
+}
+.gallery__pict {
   width: 100%;
+  height: 582px;
   border-radius: 30px;
+  object-fit: cover;
+}
+.gallery__sub-wrapper {
+  position: absolute;
+  bottom: 90px;
+  left: 0;
+  width: 100%;
+}
+.gallery__subtitle {
+  margin: 0 auto;
+  max-width: 550px;
+  font-size: 25px;
+  line-height: 30.26px;
+}
+.gallery__controls {
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  width: 100%;
+  text-align: center;
 }
 
+.social {
+  margin-top: -80px;
+}
 .social__list {
   display: flex;
   justify-content: space-between;
-  padding: 0 196px;
-  margin-bottom: 198px;
+  margin-bottom: 200px;
 }
 .social__list__item {
   font-size: 60px;
@@ -304,11 +364,12 @@ html {
   color: rgb(157, 157, 157);
 }
 
-.footer__end {
-  text-align: center;
+.footer__end-wrapper {
   margin-bottom: 42px;
+  display: flex;
+  justify-content: space-between;
 }
-.footer__end a {
+.footer__end, .footer__end a {
   color: #ff25c2;
   font-size: 35px;
   font-weight: 700;

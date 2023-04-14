@@ -1,9 +1,10 @@
 .social {
+    margin-top: -80px;
     &__list {
         display: flex;
         justify-content: space-between;
-        padding: 0 196px;
-        margin-bottom: 198px;
+        // padding: 0 196px;
+        margin-bottom: 200px;
         &__item {
             font-size: 60px;
             font-weight: 700;

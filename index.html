@@ -1,96 +1,184 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <title>Nothing-store</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="wrapper">
-        <header class="header">
-            <div class="header__container _container">
-                <nav class="header__nav navigation">
-                    <ul class="navigation__list">
-                        <li class="navigation__list-item"><a href="#models">Models</a></li>
-                        <li class="navigation__list-item"><a href="#functions">Функции</a></li>
-                        <li class="navigation__list-item"><a href="#training">Тренировки</a></li>
-                        <li class="navigation__list-item"><a href="#social">Социальные сети</a></li>
-                    </ul>
-                </nav>
+      <header class="header">
+        <div class="header__container container">
+          <nav class="header__nav navigation">
+            <ul class="navigation__list">
+              <li class="navigation__list-item">
+                <a href="#models">Models</a>
+              </li>
+              <li class="navigation__list-item">
+                <a href="#functions">Функции</a>
+              </li>
+              <li class="navigation__list-item">
+                <a href="#training">Тренировки</a>
+              </li>
+              <li class="navigation__list-item">
+                <a href="#social">Социальные сети</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <main class="page">
+        <section class="main-block">
+          <div class="main-block__container container">
+            <h1 class="main-block__title">Nothing Ear</h1>
+            <p class="main-block__desc description">
+              Беспроводные наушники-вкладыши с активным шумоподавлением, которые
+              подарят чистейший звук
+            </p>
+            <img
+              src="img/main-block/main.jpg"
+              alt="main-image"
+              class="main-block__img"
+            />
+          </div>
+        </section>
+        <section class="models" id="models">
+          <div class="models__container container">
+            <div class="models__list list">
+              <div class="list__item list__item_white">
+                <h3 class="list__item__title">Наушники<br />Ear White</h3>
+                <img
+                  src="img/models/ear-white-mini.jpg"
+                  alt="mini-white-img"
+                  class="list__item__mini-img"
+                />
+                <button class="list__item__button buy-button">Купить</button>
+              </div>
+              <div class="list__item list__item_black">
+                <h3 class="list__item__title">Наушники<br />Ear Black</h3>
+                <img
+                  src="img/models/ear-black-mini.jpg"
+                  alt="mini-black-img"
+                  class="list__item__mini-img"
+                />
+                <button class="list__item__button buy-button">Купить</button>
+              </div>
+              <div class="list__item list__item_phone">
+                <p class="list__desc">
+                  Ни что не отвлекает. Просто чистый инстинкт, сформированный
+                  как машина
+                </p>
+                <div class="right-col">
+                  <h3 class="list__item__title">Телефон<br />Nothing</h3>
+                  <img
+                    src="img/models/phone-mini.png"
+                    alt="mini-black-img"
+                    class="list__item__mini-img"
+                  />
+                </div>
+              </div>
             </div>
-        </header>
-        <main class="page">
-            <section class="page__main-block main-block">
-                <div class="main-block__container _container">
-                    <h1 class="main-block__title">Nothing Ear</h1>
-                    <p class="main-block__desc description">Беспроводные наушники-вкладыши с активным шумоподавлением, которые подарят чистейший звук</p>
-                    <img src="img/main-block/main.jpg" alt="main-image" class="main-block__img">
-                </div>
-            </section>
-            <section class="page__models models" id="models">
-                <div class="models__container _container">
-                    <div class="models__list list">
-                        <div class="list__item list__item_white ">
-                            <h3 class="list__item__title">Наушники<br>Ear White</h3>
-                            <img src="img/models/ear-white-mini.jpg" alt="mini-white-img" class="list__item__mini-img">
-                            <button class="list__item__button buy-button">Купить</button>
-                        </div>
-                        <div class="list__item list__item_black">
-                            <h3 class="list__item__title">Наушники<br>Ear Black</h3>
-                            <img src="img/models/ear-black-mini.jpg" alt="mini-black-img" class="list__item__mini-img">
-                            <button class="list__item__button buy-button">Купить</button>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="page__settings-ears settings" id="functions">
-                <div class="back">
-                    <img src="img/settings/human-left.jpg" alt="" class="settings__img">
-                    <img src="img/settings/human-right.jpg" alt="" class="settings__img">
-                </div>
-                <div class="settings__container _container">
-                    <h2 class="settings__title title">Сделайте их вашими</h2>
-                    <p class="settings__desc description">Настройте эквалайзеры, жесты, функцию «Найти наушники» и многое другое с помощью приложения ear (1), доступного для iOS и Android.</p>
-                    <p class="settings__desc description">Мгновенное сопряжение с устройствами, совместимыми с Google Fast Pair. Просто откройте корпус, нажмите пару и наслаждайтесь</p>
-                </div>
-            </section>
-            <section class="page__training training" id="training">
-                <div class="training__container _container">
-                    <h2 class="training__title title">Ударные тренировки. Нет поту</h2>
-                    <div class="training__function function">
-                        <div class="function__icon-block">
-                            <img src="img/training/hash-icon.png" alt="hash" class="function__icon_hash function__icon">
-                        </div>
-                        <p class="function__desc description">Каждый наушник имеет композитную сетчатую конструкцию для повышения защиты от пота и воды со степенью защиты ipx4.</p>
-                    </div>
-                    <div class="training__function function">
-                        <div class="function__icon-block">
-                            <img src="img/training/pause-icon.png" alt="pause" class="function__icon_pause function__icon">
-                        </div>
-                        <p class="function__desc description">Автоматически приостанавливайте воспроизведение музыки или видео, сняв наушник. Когда вы будете готовы играть, просто вставьте его обратно.</p>
-                    </div>
-                    <div class="training__function function">
-                        <div class="function__icon-block">
-                            <img src="img/training/power-icon.png" alt="" class="function__icon_power function__icon">
-                        </div>
-                        <p class="function__desc description">Cконструированный кейс-зарядка заряжается по беспроводной сети и быстро заряжает ваши наушники.</p>
-                    </div>
-                </div> 
-            </section>
-            <section class="page__microphone microphone">
-                <img src="img/microphone/woman.jpg" alt="microphone" class="microphone__img-back">
-                <div class="microphone__container _container">
-                    <h2 class="microphone__title title">Наушники nothing ear (1) используют технологию clear voice и три микрофона высокой четкости</h2>
-                    <p class="microphone__desc">Пока вы говорите, передовые алгоритмы анализируют миллион голосовых и звуковых комбинаций (даже при скорости ветра до 40 км/ч), чтобы изолировать и усиливать ваш голос с удивительной точностью.</p>
-                    <button class="microphone__button buy-button">Купить</button>
-                </div>
-            </section>
-            <section class="page__sound sound">
+          </div>
+        </section>
+        <section class="settings" id="functions">
+          <div class="back">
+            <img
+              src="img/settings/human-left.jpg"
+              alt=""
+              class="settings__img"
+            />
+            <img
+              src="img/settings/human-right.jpg"
+              alt=""
+              class="settings__img"
+            />
+          </div>
+          <div class="settings__container container">
+            <h2 class="settings__title title">Сделайте их вашими</h2>
+            <p class="settings__desc description">
+              Настройте эквалайзеры, жесты, функцию «Найти наушники» и многое
+              другое с помощью приложения ear (1), доступного для iOS и Android.
+            </p>
+            <p class="settings__desc description">
+              Мгновенное сопряжение с устройствами, совместимыми с Google Fast
+              Pair. Просто откройте корпус, нажмите пару и наслаждайтесь
+            </p>
+          </div>
+        </section>
+        <section class="training" id="training">
+          <div class="training__container container">
+            <h2 class="training__title title">Ударные тренировки. Нет поту</h2>
+            <div class="training__function function">
+              <div class="function__icon-block">
+                <img
+                  src="img/training/hash-icon.png"
+                  alt="hash"
+                  class="function__icon_hash function__icon"
+                />
+              </div>
+              <p class="function__desc description">
+                Каждый наушник имеет композитную сетчатую конструкцию для
+                повышения защиты от пота и воды со степенью защиты ipx4.
+              </p>
+            </div>
+            <div class="training__function function">
+              <div class="function__icon-block">
+                <img
+                  src="img/training/pause-icon.png"
+                  alt="pause"
+                  class="function__icon_pause function__icon"
+                />
+              </div>
+              <p class="function__desc description">
+                Автоматически приостанавливайте воспроизведение музыки или
+                видео, сняв наушник. Когда вы будете готовы играть, просто
+                вставьте его обратно.
+              </p>
+            </div>
+            <div class="training__function function">
+              <div class="function__icon-block">
+                <img
+                  src="img/training/power-icon.png"
+                  alt=""
+                  class="function__icon_power function__icon"
+                />
+              </div>
+              <p class="function__desc description">
+                Cконструированный кейс-зарядка заряжается по беспроводной сети и
+                быстро заряжает ваши наушники.
+              </p>
+            </div>
+          </div>
+        </section>
+        <section class="microphone">
+          <img
+            src="img/microphone/woman.jpg"
+            alt="microphone"
+            class="microphone__img-back"
+          />
+          <div class="microphone__container container">
+            <h2 class="microphone__title title">
+              Наушники nothing ear (1) используют технологию clear voice и три
+              микрофона высокой четкости
+            </h2>
+            <p class="microphone__desc">
+              Пока вы говорите, передовые алгоритмы анализируют миллион
+              голосовых и звуковых комбинаций (даже при скорости ветра до 40
+              км/ч), чтобы изолировать и усиливать ваш голос с удивительной
+              точностью.
+            </p>
+            <button class="microphone__button buy-button">Купить</button>
+          </div>
+        </section>
+        <!-- <section class="sound">
                 <div class="sound__container _container">
                     <h2 class="sound__title title">Чистый звук, точно настроенный</h2>
                     <img src="img/sound/ladybug.jpg" alt="" class="sound__img">
@@ -106,21 +194,80 @@
                         </ul>
                     </div>
                 </div>
-            </section>
-        </main>
-        <footer class="footer">
-            <div class="footer__container _container">
-                <nav class="footer__nav navigation">
-                    <ul class="navigation__list">
-                        <li class="navigation__list-item"><a href="#models">Models</a></li>
-                        <li class="navigation__list-item"><a href="#functions">Функции</a></li>
-                        <li class="navigation__list-item"><a href="#training">Тренировки</a></li>
-                        <li class="navigation__list-item"><a href="#social">Социальные сети</a></li>
-                    </ul>
-                </nav>
+            </section> -->
+        <section class="gallery">
+          <div class="gallery__container container">
+            <h2 class="gallery__title title">Чистый звук, точно настроенный</h2>
+            <div class="gallery__slides">
+                <div class="gallery__slide">
+                    <img src="img/gallery/1.png" alt="" class="gallery__pict">
+                    <div class="gallery__sub-wrapper">
+                        <h3 class="gallery__subtitle">Мы расчистили путь для превосходного звука, голоса и связи</h3>
+                    </div>
+                </div>
+                <div class="gallery__slide gallery__slide_active">
+                    <img src="img/gallery/2.png" alt="" class="gallery__pict">
+                    <div class="gallery__sub-wrapper">
+                        <h3 class="gallery__subtitle">Телефон Nothing Phone (1) это крупнейший запуск года в области смартфонов</h3>
+                    </div>
+                </div>
+                <div class="gallery__slide">
+                    <img src="img/gallery/3.png" alt="" class="gallery__pict">
+                    <div class="gallery__sub-wrapper">
+                        <h3 class="gallery__subtitle">Дизайн, выходящий за пределы поверхности.</h3>
+                    </div>
+                </div>
+                <div class="gallery__slide">
+                    <img src="img/gallery/4.png" alt="" class="gallery__pict">
+                    <div class="gallery__sub-wrapper">
+                        <h3 class="gallery__subtitle">И непоколебимая решимость уменьшить воздействие технологий на окружающую среду</h3>
+                    </div>
+                </div>
+                <div class="gallery__controls">
+                    <img src="img/gallery/prev.png" alt="" class="gallery__control-prev" />
+                    <img src="img/gallery/next.png" alt="" class="gallery__control-next" />
+                  </div>
             </div>
-            <h3 class="footer__end"><a href="#">nothing</a></h3>
-        </footer>
+          </div>
+        </section>
+        <section class="social">
+            <div class="social__container container" id="social">
+                <ul class="social__list">
+                    <li class="social__list__item"><a href="">inst</a></li>
+                    <li class="social__list__item"><a href="">yt</a></li>
+                    <li class="social__list__item"><a href="">twt</a></li>
+                    <li class="social__list__item"><a href="">fb</a></li>
+                </ul>
+            </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="footer__container container">
+          <nav class="footer__nav navigation">
+            <ul class="navigation__list">
+              <li class="navigation__list-item">
+                <a href="#models">Models</a>
+              </li>
+              <li class="navigation__list-item">
+                <a href="#functions">Функции</a>
+              </li>
+              <li class="navigation__list-item">
+                <a href="#training">Тренировки</a>
+              </li>
+              <li class="navigation__list-item">
+                <a href="#social">Социальные сети</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="footer__end-wrapper">
+            <p class="footer__end">2023</p>
+            <p class="footer__end"><a href="#">nothing</a></p>
+        </div>
+        
+
+      </footer>
     </div>
-</body>
+    <script src="js/gallery.js"></script>
+  </body>
 </html>
