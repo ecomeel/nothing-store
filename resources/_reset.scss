@@ -23,16 +23,3 @@ h1, h2, h3, h4, h5, h6 {
 input, button, textarea {
     font-family: inherit;
 }
-html, body {
-    height: 100%;
-    line-height: 1;
-    letter-spacing: 1;
-    font-size: 18px;
-    color: #fff;
-    font-weight: 400;
-    font-family: Inter;
-    background-color: #000000; 
-}
-html {
-    scroll-behavior: smooth;
-}
