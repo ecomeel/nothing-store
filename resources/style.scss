@@ -2,18 +2,22 @@
 $pink-color: #ff25c2;
 
 // Initial styles
-html, body {
-    height: 100%;
-    line-height: 1;
-    letter-spacing: 1;
-    font-size: 18px;
-    color: #fff;
-    font-weight: 400;
-    font-family: Inter;
-    background-color: #000000; 
+html,
+body {
+  height: 100%;
+  line-height: 1;
+  letter-spacing: 1;
+  font-size: 18px;
+  color: #fff;
+  font-weight: 400;
+  font-family: Inter;
+  background-color: #000000;
+}
+.body_fixed {
+  overflow: hidden;
 }
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 .wrapper {
   min-height: 100%;
@@ -41,7 +45,6 @@ html {
 // Common styles
 .menu {
   margin-bottom: 60px;
-
 
   &__list {
     height: 30px;

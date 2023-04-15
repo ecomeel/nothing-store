@@ -1,4 +1,2 @@
-# nothing-store
-основная часть сделана
-Допилить ошибки
-Сделать адаптив
+# nothing-store : https://ecomeel.github.io/nothing-store/
+

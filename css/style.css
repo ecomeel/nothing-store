@@ -30,7 +30,8 @@ input, button, textarea {
   font-family: inherit;
 }
 
-html, body {
+html,
+body {
   height: 100%;
   line-height: 1;
   letter-spacing: 1;
@@ -39,6 +40,10 @@ html, body {
   font-weight: 400;
   font-family: Inter;
   background-color: #000000;
+}
+
+.body_fixed {
+  overflow: hidden;
 }
 
 html {
@@ -125,6 +130,32 @@ html {
   margin-top: 45px;
 }
 
+.burger-btn {
+  display: none;
+}
+
+.burger {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease;
+  z-index: 13;
+}
+.burger_open {
+  visibility: visible;
+  opacity: 1;
+}
+.burger__content {
+  width: 100%;
+  height: 300px;
+  background-color: #000;
+}
+
 .main-block__title {
   margin-bottom: 42px;
   font-size: 150px;
@@ -179,12 +210,12 @@ html {
 }
 .models .model_phone {
   padding-left: 0;
-  height: 696px;
+  height: 100%;
   display: flex;
   column-gap: 10px;
 }
 .models .model_phone > * {
-  flex: 1 0 49%;
+  flex: 1 0 46%;
 }
 .models .model_phone .model__title {
   margin-bottom: 0;
@@ -200,6 +231,8 @@ html {
   bottom: 45px;
 }
 .models .model__right-col {
+  max-width: 570px;
+  height: 644px;
   border-radius: 30px;
   position: relative;
   background-image: url("../img/models/phone.png");
@@ -392,315 +425,36 @@ html {
   line-height: 42.36px;
 }
 
-@media (max-width: 1100px) {
-  .microphone__title {
-    font-size: 60px;
-  }
-  .microphone__desc {
-    font-size: 30px;
-    width: 80%;
-  }
-  .microphone__container {
-    padding-top: 90px;
-  }
-  .microphone__button {
-    width: 90%;
+@media (max-width: 1200px) {
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }
-@media (max-width: 780px) {
-  .page > *:not(:last-child, :first-child) {
-    margin-bottom: 50px;
-  }
-  .navigation {
-    margin-bottom: 40px;
-  }
-  .navigation a {
-    font-size: 22px;
-  }
-  .navigation__list {
-    max-width: 90%;
-    gap: 20px;
-  }
-  .main-block__title {
-    margin-top: 20px;
-    font-size: 85px;
-    line-height: 80px;
-    margin-bottom: 0;
-  }
-  .main-block__desc {
-    font-size: 18px;
-    width: 70%;
-  }
-  .main-block__img {
-    max-width: 100%;
-  }
-  .title {
-    font-size: 60px;
-    line-height: 58px;
-  }
-  .back {
-    height: 430px;
-  }
-  .settings__container {
-    padding-top: 70px;
-    padding-bottom: 0px;
-    row-gap: 20px;
-  }
-  .training__title {
-    margin-top: 60px;
-    width: 100%;
-    font-size: 45px;
-  }
-  .training_container {
-    row-gap: 40px;
-  }
-  .description {
-    font-size: 18px;
-  }
-  .microphone__title {
-    font-size: 50px;
-    margin-bottom: 20px;
-  }
-  .microphone__desc {
-    font-size: 20px;
-    margin-bottom: 30px;
-  }
-  .microphone__container {
-    padding-top: 40px;
-  }
-  .microphone__button {
-    height: 80px;
-    width: 70%;
-    margin-bottom: 40px;
-  }
-  .buy-button {
-    width: 70%;
-  }
-  .sound__title {
-    margin-bottom: 40px;
-  }
-  .social__list {
-    padding: 0;
-    justify-content: space-around;
-    margin-bottom: 60px;
-  }
-  .social__list__item a {
-    font-size: 40px;
-  }
-  .footer__end {
-    margin-bottom: 21px;
-  }
-}
-@media (max-width: 583px) {
-  .page > *:not(:last-child, :first-child) {
-    margin-bottom: 30px;
-  }
-  .training__title {
-    margin-top: 0px;
-    width: 100%;
-    font-size: 45px;
-  }
-  .main-block__title {
-    margin-top: 10px;
-    font-size: 55px;
-  }
-  .main-block__desc {
-    margin-top: 10px;
-  }
-  .navigation a {
-    font-size: 20px;
-  }
-  .navigation__list {
-    gap: 15px;
-    width: 100%;
-  }
-  .list__item {
-    width: 100%;
-    height: 450px;
-    border-radius: 30px;
-    padding: 50px 0 0 50px;
-  }
-  .list__item__title {
-    font-weight: 700;
-    font-size: 40px;
-    line-height: 38px;
-    margin-bottom: 40px;
-    letter-spacing: -0.05em;
-  }
-  .list__item__mini-img {
+@media (max-width: 960px) {
+  .models .model_phone {
+    margin-top: 150px;
     display: block;
-    margin-bottom: 30px;
-    border-radius: 30px;
   }
-  .list__item__button {
-    height: 60px;
-    width: 50%;
+  .models .model__desc {
+    max-width: 831px;
   }
-  .title {
-    font-size: 35px;
-    line-height: 33px;
-    font-weight: 700;
-  }
-  .back {
-    height: 340px;
-  }
-  .settings__container {
-    padding-top: 70px;
-    row-gap: 10px;
-  }
-  .training__title {
-    margin-top: 70px;
-  }
-  .training_container {
-    row-gap: 30px;
-  }
-  .description {
-    font-size: 16px;
-  }
-  .microphone__title {
-    margin-bottom: 20px;
-    font-weight: 400;
-    font-size: 28px;
-  }
-  .microphone__desc {
-    font-size: 18px;
-    line-height: 21px;
-    margin-bottom: 30px;
-  }
-  .microphone__container {
-    padding-top: 40px;
-  }
-  .microphone__button {
-    height: 60px;
-    margin-bottom: 40px;
-  }
-  .buy-button {
-    width: 50%;
-    font-size: 18px;
-  }
-  .sound__title {
-    margin-bottom: 40px;
-  }
-  .sound__desc__text {
-    font-size: 16px;
-    line-height: 20px;
-    width: 70%;
-  }
-  .social__list {
-    padding: 0;
-    justify-content: space-around;
-    margin-bottom: 60px;
-  }
-  .social__list__item a {
-    font-size: 40px;
-  }
-  .footer__end {
-    margin-bottom: 21px;
+  .models .model__right-col {
+    max-width: 695px;
+    height: 644px;
   }
 }
-@media (max-width: 400px) {
-  .header {
-    margin-top: 22px;
+@media (max-width: 576px) {
+  .header .menu {
+    display: none;
   }
-  .main-block__title {
-    margin-top: 20px;
-    font-size: 50px;
-  }
-  .main-block__desc {
-    margin-top: 10px;
-  }
-  .navigation a {
-    font-size: 18px;
-  }
-  .navigation__list {
-    gap: 15px;
-    width: 100%;
-  }
-  .list__item {
-    width: 100%;
-    height: 360px;
-    border-radius: 30px;
-    padding: 20px 0 0 20px;
-  }
-  .list__item__title {
-    font-weight: 700;
-    font-size: 30px;
-    line-height: 28px;
-    margin-bottom: 30px;
-    letter-spacing: -0.05em;
-  }
-  .list__item__mini-img {
+  .header .burger-btn {
     display: block;
-    margin-bottom: 30px;
-    border-radius: 30px;
-  }
-  .list__item__button {
-    height: 60px;
-    width: 50%;
-  }
-  .title {
-    font-size: 30px;
-    line-height: 29px;
-    font-weight: 700;
-  }
-  .back {
-    height: 350px;
-  }
-  .settings__container {
-    padding-top: 70px;
-    row-gap: 15px;
-  }
-  .training__title {
-    margin-top: 70px;
-  }
-  .training_container {
-    row-gap: 30px;
-  }
-  .function__icon {
-    margin-bottom: 10px;
-  }
-  .description {
-    font-size: 15px;
-    line-height: 24px;
-  }
-  .microphone__title {
-    margin-bottom: 20px;
-    font-weight: 400;
-    font-size: 28px;
-  }
-  .microphone__desc {
-    font-size: 15px;
-    line-height: 24px;
-    margin-bottom: 30px;
-  }
-  .microphone__container {
-    padding-top: 40px;
-  }
-  .microphone__button {
+    background-image: url("../img/header/burger-btn.svg");
+    background-size: cover;
     height: 50px;
-    margin-bottom: 30px;
-  }
-  .buy-button {
-    width: 50%;
-    font-size: 18px;
-  }
-  .sound__title {
-    margin-bottom: 30px;
-  }
-  .sound__desc__text {
-    font-size: 16px;
-    line-height: 20px;
-    width: 70%;
-  }
-  .social__list {
-    padding: 0;
-    justify-content: space-around;
-    margin-bottom: 40px;
-  }
-  .social__list__item a {
-    font-size: 30px;
-  }
-  .footer__end {
-    margin-bottom: 21px;
+    width: 50px;
+    margin: 0 auto;
+    cursor: pointer;
   }
 }/*# sourceMappingURL=style.css.map */
