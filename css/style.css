@@ -57,21 +57,15 @@ html {
   flex-direction: column;
 }
 
-.container {
-  max-width: 1150px;
-  margin: 0 auto;
-  padding: 0 15px;
-  text-align: center;
-  box-sizing: content-box;
-}
-
-.page {
-  flex: 1 1 auto;
-}
 .page > *:not(:last-child, :first-child) {
   margin-bottom: 150px;
 }
 
+@media (max-width: 576px) {
+  .page > *:not(:last-child, :first-child) {
+    margin-bottom: 100px;
+  }
+}
 .menu {
   margin-bottom: 60px;
 }
@@ -93,6 +87,14 @@ html {
   color: #ff25c2;
 }
 
+.container {
+  max-width: 1150px;
+  margin: 0 auto;
+  padding: 0 15px;
+  text-align: center;
+  box-sizing: content-box;
+}
+
 .description {
   line-height: 30.26px;
   font-size: 25px;
@@ -105,6 +107,13 @@ html {
   line-height: 73px;
   letter-spacing: -0.06em;
   color: #ff25c2;
+}
+
+.subtitle {
+  font-size: 60px;
+  line-height: 56.11px;
+  font-weight: 700;
+  color: white;
 }
 
 .buy-button {
@@ -126,8 +135,25 @@ html {
   border-color: gray;
 }
 
+@media (max-width: 576px) {
+  .description {
+    font-size: 16px;
+    line-height: 19.36px;
+  }
+  .title {
+    line-height: 42.09px;
+    font-size: 45px;
+  }
+  .subtitle {
+    font-size: 45px;
+    line-height: 42.09px;
+  }
+  .buy-button {
+    height: 75px;
+  }
+}
 .header {
-  margin-top: 45px;
+  padding-top: 45px;
 }
 
 .burger-btn {
@@ -156,25 +182,51 @@ html {
   background-color: #000;
 }
 
+@media (max-width: 576px) {
+  .header {
+    padding-top: 17px;
+    margin-bottom: 77px;
+  }
+  .header .menu {
+    display: none;
+  }
+  .header__container {
+    position: absolute;
+  }
+  .header .burger-btn {
+    margin: 0 auto;
+    display: block;
+    background-image: url("../img/header/burger-btn.svg");
+    background-size: cover;
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+  }
+}
 .main-block__title {
-  margin-bottom: 42px;
+  margin-bottom: 20px;
   font-size: 150px;
   font-weight: 700;
   line-height: 133px;
   letter-spacing: -0.07em;
   vertical-align: top;
   color: #ff25c2;
-  margin-bottom: px;
 }
 .main-block__desc {
-  position: relative;
-  margin: 20px auto 0 auto;
-  width: 430px;
+  margin: 0 auto 20px auto;
+  max-width: 430px;
 }
 .main-block__img {
+  width: 100%;
   margin: -20px 0 70px 0;
 }
 
+@media (max-width: 576px) {
+  .main-block__title {
+    font-size: 60px;
+    line-height: 72.61px;
+  }
+}
 .models__container {
   text-align: left;
 }
@@ -184,10 +236,20 @@ html {
   border-radius: 30px;
   padding: 50px 0 0 50px;
 }
+.models .model_white {
+  background: url("../img/models/ear-white.jpg") no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  margin-bottom: 78px;
+}
+.models .model_black {
+  border: 1px solid white;
+  background: url("../img/models/ear-black.jpg") no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  margin-bottom: 30px;
+}
 .models .model__title {
-  font-weight: 700;
-  font-size: 60px;
-  line-height: 56px;
   margin-bottom: 149px;
   letter-spacing: -0.05em;
 }
@@ -199,54 +261,70 @@ html {
 .models .model__button {
   width: 420px;
 }
-.models .model_white {
-  background: url("../img/models/ear-white.jpg") no-repeat;
-  margin-bottom: 78px;
+
+@media (max-width: 576px) {
+  .models .model {
+    height: 550px;
+    padding: 43px 15px 38px 14px;
+  }
+  .models .model__title {
+    margin-bottom: 310px;
+    font-size: 45px;
+    line-height: 42.09px;
+  }
+  .models .model__mini-img {
+    display: none;
+  }
+  .models .model__button {
+    width: 100%;
+  }
+  .models .model_white {
+    margin-bottom: 50px;
+  }
 }
-.models .model_black {
-  border: 1px solid white;
-  background: url("../img/models/ear-black.jpg") no-repeat;
-  margin-bottom: 30px;
-}
-.models .model_phone {
-  padding-left: 0;
-  height: 100%;
+.phone__container {
   display: flex;
-  column-gap: 10px;
+  flex-wrap: wrap;
+  column-gap: 25px;
+  row-gap: 60px;
 }
-.models .model_phone > * {
-  flex: 1 0 46%;
+.phone__container > * {
+  flex: 1 0 48%;
 }
-.models .model_phone .model__title {
-  margin-bottom: 0;
+.phone__title {
+  align-self: flex-end;
+  text-align: left;
+  font-weight: 700;
+  letter-spacing: -0.05em;
+}
+.phone__img-block {
+  position: relative;
+  max-width: 570px;
+  height: 644px;
+  background-image: url("../img/models/phone.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  border-radius: 30px;
+}
+.phone__subtitle {
   position: absolute;
   top: 50px;
   left: 35px;
   font-size: 45px;
-  line-height: 42.09px;
+  font-weight: 700;
 }
-.models .model_phone .model__mini-img {
+.phone__mini-img {
   position: absolute;
   left: 35px;
   bottom: 45px;
 }
-.models .model__right-col {
-  max-width: 570px;
-  height: 644px;
-  border-radius: 30px;
-  position: relative;
-  background-image: url("../img/models/phone.png");
-  background-size: cover;
-  background-position: 50%;
-}
-.models .model__desc {
-  align-self: end;
-  font-size: 60px;
-  line-height: 56.11px;
-  font-weight: 700;
-  letter-spacing: -0.05em;
-}
 
+@media (max-width: 576px) {
+  .phone__container {
+    row-gap: 50px;
+  }
+}
 .settings {
   position: relative;
 }
@@ -278,6 +356,26 @@ html {
   z-index: 2;
 }
 
+@media (max-width: 576px) {
+  .settings__container {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    row-gap: 50px;
+  }
+  .settings__title {
+    max-width: 308px;
+  }
+  .settings__desc {
+    margin: 0 auto;
+    max-width: 310px;
+  }
+  .settings .back {
+    height: 559px;
+  }
+  .settings .back > *:first-of-type {
+    display: none;
+  }
+}
 .training__container {
   display: flex;
   flex-direction: column;
@@ -429,32 +527,5 @@ html {
   .container {
     padding-left: 15px;
     padding-right: 15px;
-  }
-}
-@media (max-width: 960px) {
-  .models .model_phone {
-    margin-top: 150px;
-    display: block;
-  }
-  .models .model__desc {
-    max-width: 831px;
-  }
-  .models .model__right-col {
-    max-width: 695px;
-    height: 644px;
-  }
-}
-@media (max-width: 576px) {
-  .header .menu {
-    display: none;
-  }
-  .header .burger-btn {
-    display: block;
-    background-image: url("../img/header/burger-btn.svg");
-    background-size: cover;
-    height: 50px;
-    width: 50px;
-    margin: 0 auto;
-    cursor: pointer;
   }
 }/*# sourceMappingURL=style.css.map */

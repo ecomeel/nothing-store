@@ -1,20 +1,28 @@
 .main-block {
     &__title {
-        margin-bottom: 42px;
+        margin-bottom: 20px;
         font-size: 150px;
         font-weight: 700;
         line-height: 133px;
         letter-spacing: -0.07em;
         vertical-align: top;
         color: $pink-color;
-        margin-bottom: px;
     }
     &__desc {
-        position: relative;
-        margin: 20px auto 0 auto;
-        width: 430px;
+        margin: 0 auto 20px auto;
+        max-width: 430px;
     }
     &__img {
+        width: 100%;
         margin: -20px 0 70px 0;
+    }
+}
+
+@media (max-width: 576px) {
+    .main-block {
+        &__title {
+            font-size: 60px;
+            line-height: 72.61px;
+        }
     }
 }

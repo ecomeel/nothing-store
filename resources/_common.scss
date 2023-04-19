@@ -1,0 +1,89 @@
+.menu {
+  margin-bottom: 60px;
+
+  &__list {
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    column-gap: 43px;
+  }
+
+  &__item {
+    line-height: 21.78px;
+  }
+  &__link {
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    transition: color 0.6s;
+    &:hover {
+      color: $pink-color;
+    }
+  }
+}
+
+.container {
+    max-width: 1150px;
+    margin: 0 auto;
+    padding: 0 15px;
+    text-align: center;
+    box-sizing: content-box;
+  }
+
+.description {
+  line-height: 30.26px;
+  font-size: 25px;
+  letter-spacing: -0.03em;
+}
+
+.title {
+  font-size: 100px;
+  font-weight: 700;
+  line-height: 73px;
+  letter-spacing: -0.06em;
+  color: $pink-color;
+}
+
+.subtitle {
+    font-size: 60px;
+    line-height: 56.11px;
+    font-weight: 700;
+    color: white;
+}
+
+.buy-button {
+  color: white;
+  font-weight: 400px;
+  font-size: 25px;
+  line-height: 30px;
+  background-color: transparent;
+  border: 1px solid #fff;
+  letter-spacing: -0.03em;
+  border-radius: 100px;
+  text-transform: uppercase;
+  height: 110px;
+  cursor: pointer;
+  transition: all 0.5s;
+
+  &:hover {
+    background-color: #a7a7a771;
+    border-color: gray;
+  }
+}
+
+@media (max-width: 576px) {
+    .description {
+        font-size: 16px;
+        line-height: 19.36px;
+    }
+    .title {
+        line-height: 42.09px;
+        font-size: 45px;
+    }
+    .subtitle {
+        font-size: 45px;
+        line-height: 42.09px;
+    }
+    .buy-button {
+        height: 75px;
+    }
+}

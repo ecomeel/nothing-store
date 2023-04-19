@@ -1,10 +1,12 @@
 .header {
-  margin-top: 45px;
+  padding-top: 45px;
 }
 
 .burger-btn {
   display: none;
 }
+
+
 
 .burger {
   position: fixed;
@@ -25,5 +27,27 @@
     width: 100%;
     height: 300px;
     background-color: #000;
+  }
+}
+
+@media (max-width: 576px) {
+  .header {
+    padding-top: 17px;
+    margin-bottom: 77px;
+    .menu {
+      display: none;
+    }
+    &__container {
+      position: absolute;
+    }
+    .burger-btn {
+      margin: 0 auto;
+      display: block;
+      background-image: url("../img/header/burger-btn.svg");
+      background-size: cover;
+      height: 50px;
+      width: 50px;
+      cursor: pointer;
+    }
   }
 }

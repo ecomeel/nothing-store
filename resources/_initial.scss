@@ -1,0 +1,33 @@
+html,
+body {
+  height: 100%;
+  line-height: 1;
+  letter-spacing: 1;
+  font-size: 18px;
+  color: #fff;
+  font-weight: 400;
+  font-family: Inter;
+  background-color: #000000;
+}
+.body_fixed {
+  overflow: hidden;
+}
+html {
+  scroll-behavior: smooth;
+}
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.page > *:not(:last-child, :first-child) {
+  margin-bottom: 150px;
+}
+
+@media (max-width: 576px) {
+    .page > *:not(:last-child, :first-child) {
+        margin-bottom: 100px;
+      }
+}

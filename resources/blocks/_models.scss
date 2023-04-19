@@ -7,10 +7,20 @@
     height: 644px;
     border-radius: 30px;
     padding: 50px 0 0 50px;
+    &_white {
+      background: url("../img/models/ear-white.jpg") no-repeat;
+      background-size: cover;
+      background-position: 50% 50%;
+      margin-bottom: 78px;
+    }
+    &_black {
+      border: 1px solid white;
+      background: url("../img/models/ear-black.jpg") no-repeat;
+      background-size: cover;
+      background-position: 50% 50%;
+      margin-bottom: 30px;
+    }
     &__title {
-      font-weight: 700;
-      font-size: 60px;
-      line-height: 56px;
       margin-bottom: 149px;
       letter-spacing: -0.05em;
     }
@@ -22,52 +32,28 @@
     &__button {
       width: 420px;
     }
-    &_white {
-      background: url("../img/models/ear-white.jpg") no-repeat;
-      margin-bottom: 78px;
-    }
-    &_black {
-      border: 1px solid white;
-      background: url("../img/models/ear-black.jpg") no-repeat;
-      margin-bottom: 30px;
-    }
-    &_phone {
-      padding-left: 0;
-      height: 100%;
-      display: flex;
-      column-gap: 10px;
-      & > * {
-        flex: 1 0 46%;
-      }
-      .model__title {
-        margin-bottom: 0;
-        position: absolute;
-        top: 50px;
-        left: 35px;
+  }
+}
+
+@media (max-width: 576px) {
+  .models {
+    .model {
+      height: 550px;
+      padding: 43px 15px 38px 14px;
+      &__title {
+        margin-bottom: 310px;
         font-size: 45px;
         line-height: 42.09px;
       }
-      .model__mini-img {
-        position: absolute;
-        left: 35px;
-        bottom: 45px;
+      &__mini-img {
+        display: none;
       }
-    }
-    &__right-col {
-      max-width: 570px;
-      height: 644px;
-      border-radius: 30px;
-      position: relative;
-      background-image: url("../img/models/phone.png");
-      background-size: cover;
-      background-position: 50%;
-    }
-    &__desc {
-      align-self: end;
-      font-size: 60px;
-      line-height: 56.11px;
-      font-weight: 700;
-      letter-spacing: -0.05em;
+      &__button {
+        width: 100%;
+      }
+      &_white {
+        margin-bottom: 50px;
+      }
     }
   }
 }
