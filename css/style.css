@@ -430,6 +430,10 @@ html {
   .settings .back {
     height: 559px;
   }
+  .settings .back > * {
+    object-fit: cover;
+    object-position: 0%;
+  }
   .settings .back > *:first-of-type {
     display: none;
   }
@@ -470,7 +474,7 @@ html {
     row-gap: 50px;
   }
   .training__title {
-    max-width: 413px;
+    width: 413px;
   }
   .training .function {
     max-width: 319px;

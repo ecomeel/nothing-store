@@ -46,9 +46,14 @@
 
         .back {
             height: 559px;
+            &>* {
+                object-fit: cover;
+                object-position: 0%;
+            }
             &>*:first-of-type {
                 display: none;
             }
+            
         }
     }
 }
