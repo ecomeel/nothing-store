@@ -325,22 +325,23 @@ html {
 .phone__container {
   display: flex;
   flex-wrap: wrap;
-  column-gap: 25px;
   row-gap: 60px;
+  column-gap: 25px;
 }
 .phone__container > * {
   flex: 1 0 48%;
 }
 .phone__title {
-  align-self: flex-end;
+  max-width: 831px;
+  align-self: end;
   text-align: left;
   font-weight: 700;
   letter-spacing: -0.05em;
 }
 .phone__img-block {
   position: relative;
-  max-width: 570px;
   height: 644px;
+  max-width: 695px;
   background-image: url("../img/models/phone.png");
   background-size: cover;
   background-repeat: no-repeat;
@@ -360,8 +361,25 @@ html {
   bottom: 45px;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 960px) {
   .phone__container {
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+  .phone__title {
+    align-self: start;
+    max-width: 831px;
+  }
+  .phone__img-block {
+    display: inline-block;
+    width: 100%;
+    flex: none;
+    align-self: flex-end;
+    max-width: 695px;
+  }
+}
+@media (max-width: 576px) {
+  .phone {
     row-gap: 50px;
   }
 }
