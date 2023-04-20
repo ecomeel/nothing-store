@@ -1,6 +1,6 @@
 .social {
+    margin-bottom: 200px;
     &__list {
-        margin-bottom: 200px;
         display: flex;
         justify-content: center;
         column-gap: 30px;
@@ -23,8 +23,9 @@
 
 @media (max-width: 576px) {
     .social {
+        margin-bottom: 100px;
+
         &__list {
-            margin-bottom: 65px;
             justify-content: space-evenly;
             column-gap: 0;
         }

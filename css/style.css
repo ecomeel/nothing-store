@@ -152,45 +152,6 @@ html {
     height: 75px;
   }
 }
-.header {
-  margin-top: 45px;
-}
-.header .burger-btn {
-  display: none;
-}
-
-@media (max-width: 576px) {
-  .header {
-    margin-top: 17px;
-    margin-bottom: 77px;
-    position: relative;
-  }
-  .header .menu {
-    display: none;
-  }
-  .header .burger-btn-wrapper {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1000;
-  }
-  .header .burger-btn {
-    margin: 0 auto;
-    display: block;
-    background-image: url("../img/header/burger-btn.svg");
-    background-size: cover;
-    height: 50px;
-    width: 50px;
-    cursor: pointer;
-  }
-  .header .burger-btn_open {
-    margin-top: -8px;
-    background-image: url("../img/header/burger-close.svg");
-    width: 73px;
-    height: 73px;
-  }
-}
 .burger {
   position: fixed;
   top: 0;
@@ -243,6 +204,45 @@ html {
   line-height: 25.73px;
 }
 
+.header {
+  margin-top: 45px;
+}
+.header .burger-btn {
+  display: none;
+}
+
+@media (max-width: 576px) {
+  .header {
+    margin-top: 17px;
+    margin-bottom: 77px;
+    position: relative;
+  }
+  .header .menu {
+    display: none;
+  }
+  .header .burger-btn-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+  }
+  .header .burger-btn {
+    margin: 0 auto;
+    display: block;
+    background-image: url("../img/header/burger-btn.svg");
+    background-size: cover;
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+  }
+  .header .burger-btn_open {
+    margin-top: -8px;
+    background-image: url("../img/header/burger-close.svg");
+    width: 73px;
+    height: 73px;
+  }
+}
 .main-block__title {
   margin-bottom: 20px;
   font-size: 150px;
@@ -558,6 +558,9 @@ html {
   width: 100%;
   text-align: center;
 }
+.gallery__controls > * {
+  cursor: pointer;
+}
 
 @media (max-width: 576px) {
   .gallery {
@@ -590,8 +593,10 @@ html {
     height: 34px;
   }
 }
-.social__list {
+.social {
   margin-bottom: 200px;
+}
+.social__list {
   display: flex;
   justify-content: center;
   column-gap: 30px;
@@ -611,8 +616,10 @@ html {
 }
 
 @media (max-width: 576px) {
+  .social {
+    margin-bottom: 100px;
+  }
   .social__list {
-    margin-bottom: 65px;
     justify-content: space-evenly;
     column-gap: 0;
   }
