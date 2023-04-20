@@ -1,8 +1,5 @@
 .gallery {
-    // margin-bottom: 68px;
-    margin-bottom: 0;
-    &__container {
-    }
+    margin-bottom: 58px !important;
     &__title {
         color: white;
         margin-bottom: 100px;
@@ -45,5 +42,37 @@
         left: 0;
         width: 100%;
         text-align: center;
+    }
+}
+
+@media (max-width: 576px) {
+    .gallery {
+        margin-bottom: 33px !important;
+        &__title {
+            margin-bottom: 50px;
+            font-size: 35px;
+            line-height: 33.09px;
+        }
+        &__slides, &__pict {
+            height: 432px;
+        }
+        &__sub-wrapper {
+            bottom: 58px;
+        }
+        &__subtitle {
+            margin: 0 28px;
+            font-size: 16px;
+            line-height: 19.36px;
+        }
+        &__controls {
+            display: flex;
+            justify-content: space-between;
+            bottom: 45%;
+            width: 98%;
+            &>* {
+                width: 34px;
+                height: 34px;
+            }
+        }
     }
 }

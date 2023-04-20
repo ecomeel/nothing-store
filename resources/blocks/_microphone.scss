@@ -8,6 +8,7 @@
         width: 100%;
         z-index: -1;
         object-fit: cover;
+        object-position: 50%;
         height: 100%;
     }
     &__title {
@@ -16,16 +17,43 @@
     }
     &__desc {
         margin: 0 auto;
+        margin-bottom: 60px;
         max-width: 942px;
         font-weight: 700;
         font-size: 45px;
         line-height: 40.5px;
         letter-spacing: -0.06em;
-        margin-bottom: 60px;
     }
     &__button {
-        width: 866px;
+        width: 100%;
         margin: 0 auto;
         margin-bottom: 130px;
     }
+}
+
+@media (max-width: 576px) {
+    .microphone {
+        &__container {
+            padding-top: 100px;
+        }
+        &__img-back {
+            height: 932px;
+            object-position: 20%;
+        }
+        &__title {
+            margin: 0 auto;
+            margin-bottom: 33px;
+            max-width: 341px;
+            font-size: 45px;
+            line-height: 42.09px;
+        }
+        &__desc {
+            margin-bottom: 50px;
+            font-size: 25px;
+            line-height: 22.5px;
+            max-width: 269px;
+        }
+
+    }
+
 }
