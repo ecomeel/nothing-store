@@ -474,7 +474,7 @@ html {
     row-gap: 50px;
   }
   .training__title {
-    width: 413px;
+    max-width: 413px;
   }
   .training .function {
     max-width: 319px;
