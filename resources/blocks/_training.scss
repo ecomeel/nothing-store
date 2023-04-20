@@ -32,3 +32,17 @@
     }
     
 }
+
+@media (max-width: 576px) {
+    .training {
+        &__container {
+            row-gap: 50px;
+        }
+        &__title {
+            max-width: 413px;
+        }
+        .function {
+            max-width: 319px;
+        }
+    }
+}

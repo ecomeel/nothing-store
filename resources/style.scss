@@ -1,106 +1,15 @@
 @import "reset";
 $pink-color: #ff25c2;
 
-// Initial styles
-html, body {
-    height: 100%;
-    line-height: 1;
-    letter-spacing: 1;
-    font-size: 18px;
-    color: #fff;
-    font-weight: 400;
-    font-family: Inter;
-    background-color: #000000; 
-}
-html {
-    scroll-behavior: smooth;
-}
-.wrapper {
-  min-height: 100%;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-}
+@import "initial";
+@import "common";
 
-.container {
-  max-width: 1150px;
-  margin: 0 auto;
-  padding: 0 15px;
-  text-align: center;
-  box-sizing: content-box;
-}
-
-.page {
-  flex: 1 1 auto;
-
-  & > *:not(:last-child, :first-child) {
-    margin-bottom: 150px;
-  }
-}
-
-// Common styles
-.menu {
-  margin-bottom: 60px;
-
-
-  &__list {
-    height: 30px;
-    display: flex;
-    justify-content: center;
-    column-gap: 43px;
-  }
-
-  &__item {
-    line-height: 21.78px;
-  }
-  &__link {
-    letter-spacing: -0.02em;
-    text-transform: uppercase;
-    transition: color 0.6s;
-    &:hover {
-      color: $pink-color;
-    }
-  }
-}
-
-.description {
-  line-height: 30.26px;
-  font-size: 25px;
-  letter-spacing: -0.03em;
-}
-
-.title {
-  font-size: 100px;
-  font-weight: 700;
-  line-height: 73px;
-  letter-spacing: -0.06em;
-  color: $pink-color;
-}
-
-.buy-button {
-  color: white;
-  font-weight: 400px;
-  font-size: 25px;
-  line-height: 30px;
-  background-color: transparent;
-  border: 1px solid #fff;
-  letter-spacing: -0.03em;
-  border-radius: 100px;
-  text-transform: uppercase;
-  height: 110px;
-  cursor: pointer;
-  transition: all 0.5s;
-
-  &:hover {
-    background-color: #a7a7a771;
-    border-color: gray;
-  }
-}
 
 // LAYOUT
 @import "blocks/header";
 @import "blocks/main-block";
 @import "blocks/models";
+@import "blocks/phone";
 @import "blocks/settings";
 @import "blocks/training";
 @import "blocks/microphone";

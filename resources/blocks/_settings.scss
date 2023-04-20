@@ -28,3 +28,27 @@
         z-index: 2;
     }
 }
+
+@media (max-width: 576px) {
+    .settings {
+        &__container {
+            padding-top: 100px;
+            padding-bottom: 100px;
+            row-gap: 50px;
+        }
+        &__title {
+            max-width: 308px;
+        }
+        &__desc {
+            margin: 0 auto;
+            max-width: 310px;
+        }
+
+        .back {
+            height: 559px;
+            &>*:first-of-type {
+                display: none;
+            }
+        }
+    }
+}

@@ -1,0 +1,47 @@
+.phone {
+  &__container {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 25px;
+    row-gap: 60px;
+    & > * {
+      flex: 1 0 48%;
+    }
+  }
+  &__title {
+    align-self: flex-end;
+    text-align: left;
+    font-weight: 700;
+    letter-spacing: -0.05em;
+  }
+  &__img-block {
+    position: relative;
+    max-width: 570px;
+    height: 644px;
+    background-image: url("../img/models/phone.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    border-radius: 30px;
+  }
+  &__subtitle {
+    position: absolute;
+    top: 50px;
+    left: 35px;
+    font-size: 45px;
+    font-weight: 700;
+  }
+  &__mini-img {
+    position: absolute;
+    left: 35px;
+    bottom: 45px;
+  }
+}
+
+@media (max-width: 576px) {
+  .phone {
+    &__container {
+      row-gap: 50px;
+    }
+  }
+}

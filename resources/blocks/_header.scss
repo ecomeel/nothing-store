@@ -1,3 +1,53 @@
 .header {
-    margin-top: 45px;
+  padding-top: 45px;
+}
+
+.burger-btn {
+  display: none;
+}
+
+
+
+.burger {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease;
+  z-index: 13;
+  &_open {
+    visibility: visible;
+    opacity: 1;
+  }
+  &__content {
+    width: 100%;
+    height: 300px;
+    background-color: #000;
+  }
+}
+
+@media (max-width: 576px) {
+  .header {
+    padding-top: 17px;
+    margin-bottom: 77px;
+    .menu {
+      display: none;
+    }
+    &__container {
+      position: absolute;
+    }
+    .burger-btn {
+      margin: 0 auto;
+      display: block;
+      background-image: url("../img/header/burger-btn.svg");
+      background-size: cover;
+      height: 50px;
+      width: 50px;
+      cursor: pointer;
+    }
+  }
 }

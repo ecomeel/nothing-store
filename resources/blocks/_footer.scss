@@ -3,7 +3,7 @@
         margin-bottom: 70px;
     }
     &__end-wrapper {
-        margin-bottom: 42px;
+        margin-bottom: 54px;
         display: flex;
         justify-content: space-between;
     }
@@ -13,4 +13,29 @@
         font-weight: 700;
         line-height: 42.36px;
     }
+}
+
+@media (max-width: 576px) {
+    .footer {
+        .menu {
+            height: 100%;
+            margin-bottom: 59px;
+
+            &__list {
+                flex-direction: column;
+                row-gap: 9px;
+            }
+        }
+        &__end-wrapper {
+            margin-bottom: 52px;
+            justify-content: center;
+            flex-direction: row-reverse;
+            column-gap: 10px;
+        }
+        &__end, &__end a {
+            font-size: 22px;
+            line-height: 26.63px;
+        }
+    }
+
 }
