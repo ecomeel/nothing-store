@@ -5,7 +5,14 @@
   }
 }
 
+@media (max-width: 960px) {
+  .header {
+    .menu {
+      margin-left: -25px;
 
+    }
+  }
+}
 
 @media (max-width: 576px) {
   .header {

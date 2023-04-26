@@ -31,6 +31,24 @@
     }
 }
 
+@media (max-width: 960px) {
+    .microphone {
+        &__container {
+            padding-top: 155px;
+            
+        }
+        &__title {
+            margin-bottom: 30px;
+        }
+        &__desc {
+            max-width: 842px;
+        }
+        &__button {
+            width: 91%;
+        }
+    }
+}
+
 @media (max-width: 576px) {
     .microphone {
         &__container {

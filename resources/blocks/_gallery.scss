@@ -48,6 +48,17 @@
     }
 }
 
+@media (max-width: 960px) {
+    .gallery {
+        &__container {
+            padding-top: 20px;
+        }
+        &__title {
+            margin-bottom: 80px;
+        }
+    }
+}
+
 @media (max-width: 576px) {
     .gallery {
         margin-bottom: 33px !important;

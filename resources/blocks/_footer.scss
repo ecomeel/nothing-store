@@ -15,6 +15,13 @@
     }
 }
 
+@media (max-width: 960px) {
+    .footer {
+        .menu {
+            margin-bottom: 45px;
+        }
+    }
+}
 @media (max-width: 576px) {
     .footer {
         .menu {

@@ -20,6 +20,15 @@
         }
     }
 }
+@media (max-width: 960px) {
+    .social {
+        margin-bottom: 180px;
+        &__list {
+            justify-content: space-around;
+            column-gap: normal;
+        }
+    }
+}
 
 @media (max-width: 576px) {
     .social {
