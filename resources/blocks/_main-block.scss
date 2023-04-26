@@ -39,9 +39,19 @@
 
 @media (max-width: 576px) {
     .main-block {
+        margin-left: 0px;
         &__title {
+            margin-top: 50px;
+            margin-bottom: 23px;
             font-size: 60px;
             line-height: 72.61px;
+        }
+        &__desc {
+            max-width: 299px;
+        }
+        &__img {
+            margin-top: 15px;
+            margin-bottom: 60px;
         }
     }
 }

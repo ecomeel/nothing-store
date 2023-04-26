@@ -284,9 +284,21 @@ html {
   }
 }
 @media (max-width: 576px) {
+  .main-block {
+    margin-left: 0px;
+  }
   .main-block__title {
+    margin-top: 50px;
+    margin-bottom: 23px;
     font-size: 60px;
     line-height: 72.61px;
+  }
+  .main-block__desc {
+    max-width: 299px;
+  }
+  .main-block__img {
+    margin-top: 15px;
+    margin-bottom: 60px;
   }
 }
 .models__container {
@@ -342,6 +354,7 @@ html {
   }
   .models .model_white {
     margin-bottom: 50px;
+    background-position: 35%;
   }
 }
 .phone__container {
